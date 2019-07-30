@@ -36,7 +36,7 @@ final class VideoPlayer: NSObject {
         
         let playerController = AVPlayerViewController()
         playerController.player = player
-        viewController.addChildViewController(playerController)
+        viewController.addChild(playerController)
         
         playerController.view.translatesAutoresizingMaskIntoConstraints = false
         playerController.view.frame = view.frame
